@@ -255,7 +255,72 @@ html, body{
 .interior{
   width: 40%;
 }
-.dropdown-menu {
+#imgSofInt1{
+  margin-left: calc(35% - 5px);
+  width: 50%;
+  margin-bottom: 5%;
+}
+#imgSofInt2{
+  /*margin-left: calc(35% - 5px);*/
+  width: 40%;
+  margin-bottom: 5%;
+}
+#tex2Soft{
+  width: 20rem;
+  float: left;
+}
+#imRedes{
+  width: 60%;
+  margin-left: calc(15% - 5px);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  border: solid 3px #35F7BA;
+}
+#imElec{
+  width: 75%;
+  margin-left: calc(15% - 5px);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  border: solid 3px white;
+}
+#imSegElec{
+  width: 85%;
+  margin-left: calc(8% - 5px);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  border: solid 3px white;
+}
+#imDisenoGraf{
+  width: 75%;
+  margin-left: calc(15% - 5px);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  border: solid 3px white;
+}
+#imDisGraf{
+  width: 75%;
+  margin-left: calc(15% - 5px);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#contDisGraf1{
+  width: 19rem;
+  float: left;
+}
+#contDisGraf2{
+  width: 18rem;
+  float: left;
+}
+.subServ{
+  color: #02cfb4;
+  font-family: "header_titulos";
+  margin-bottom: 1.5rem;
+}
+.dropdown-menu{
   width: 80%;
   background-color: #85C3FF;
   border-radius: 20px;
@@ -266,6 +331,25 @@ html, body{
   color: #333031;
   font-weight: bolder;
 }
+#bot button{
+  border: solid 2px #35F7BA;
+  border-radius: 10px;
+  background-color: #259674;
+  color: white;
+  margin-left: calc(15% - 5px);
+}
+.dropdown-toggle:hover{
+  background: #74FFF5 !important;
+  /*color: red;*/
+  color: #259674 !important;
+}
+#botImp button{
+  border: solid 2px #35F7BA;
+  border-radius: 10px;
+  background-color: #259674;
+  color: white;
+  margin-left: calc(15% - 5px);
+} 
 /*.textservicios{
   font-family: "header_menu";
   font-size: 1.3rem;
@@ -425,6 +509,10 @@ html, body{
   .mr-3{
     width: 10rem;
     margin-left: calc(30% - 5px);
+  }
+  #imgSofInt2{
+    margin-left: calc(30% - 10px);
+      
   }
     /*#header_home{
       position: fixed;
