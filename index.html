@@ -8,11 +8,11 @@
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	    <link rel="stylesheet" href="styles/estilos.css">
-	   <!--  <link rel="stylesheet" href="styles/aos.css">
-	    <link rel="stylesheet" href="styles/animate.css"> -->
+	    <link rel="stylesheet" href="styles/aos.css">
+	    <link rel="stylesheet" href="styles/animate.css">
 		<title>Netwart</title>
 	</head>
-	<body>
+	<body data-spy="scroll">
 	
 	<!-- Main aqui esta el header y el slider de imagenes -->
 		<main id="main">
@@ -37,18 +37,18 @@
 		                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 					        <ul class="navbar-nav ml-auto">
 					            <li class="nav-item active li_nav">
-					              <a class="nav-link" href="#">
+					              <a class="nav-link" href="index.html">
 					              <span class="fa fa-home fa-lg"></span>
 					              INICIO</a>
 					            </li>
 					            <li class="nav-item li_nav">
-					              <a class="nav-link" href="#"><span class="fas fa-id-card fa-lg""></span> NUESTRA EMPRESA</a>
+					              <a class="nav-link" href="nuestraEmpresa.html"><span class="fas fa-id-card fa-lg""></span> NUESTRA EMPRESA</a>
 					            </li>
 					            <li class="nav-item li_nav">
 					              <a class="nav-link" href="#"><span class="fas fa-laptop fa-lg""></span> SERVICIOS</a>
 					            </li>
 					            <li class="nav-item">
-					              <a class="nav-link" href="#"><span class="fas fa-envelope fa-lg"></span> CONTACTANOS</a>
+					              <a class="nav-link" href="contactanos.html"><span class="fas fa-envelope fa-lg"></span> CONTACTANOS</a>
 					            </li>
 					        </ul>
 				        </div>
@@ -80,10 +80,10 @@
 	                   			<br>
 	                   			<br>
 			                  </p>
-			                  <button id="botFaceboook" type="button" class="btn btn-face fab fa-facebook fa-lg" target="_blank">
+			                  <button  id="botFaceboook" type="button" class="btn btn-face fab fa-facebook fa-lg animated bounceIn" target="_blank">
 			                  Facebook</button>
 			                  <!-- <a id="botFaceboook" href="#" class="btn btn-outline fab fa-facebook fa-lg">Facebook</a> -->
-			                  <button type="button" class="btn btn-what fab fa-whatsapp fa-lg" target="_blank">
+			                  <button type="button" class="btn btn-what fab fa-whatsapp fa-lg animated bounceIn" target="_blank">
 			                  Whatsapp</button>
 			                  <br>
 			                </div>
@@ -95,7 +95,7 @@
 			    </div>
 			</div>
 			</div>
-			<div>
+			<div class="animated pulse">
 				<img id="scroll" src="assets/images/scroll/scroll.png">
 			</div>
 		</main>
@@ -105,12 +105,12 @@
 	 	<div id="particles-js" class="container-fluid why">
         <div id="contenidoWhy" class="row">
             <div class="col-md">
-                <h2 class="letra1-why">
+                <h2 data-aos="fade-down-right" class="letra1-why">
                    Por Que <a id="sig">&#63;</a>
                    <span class="oculto"> NetWart </span> 
                 </h2>
                 <div class="row">
-                    <div class="col-md-12 col-lg-10 offset-lg-2">
+                    <div data-aos="fade-up-right" class="col-md-12 col-lg-10 offset-lg-2">
                         <div class="media why-media">
                             <img src="assets/why/programacion.png" class="mr-3">
                             <div class="media-body">
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-10 offset-lg-2 col-2-media">
+                    <div data-aos="fade-up-right" class="col-md-12 col-lg-10 offset-lg-2 col-2-media">
                         <div class="media why-media">
                             <img src="assets/why/medalla.png" class="mr-3">
                             <div class="media-body">
@@ -132,15 +132,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-1 d-none d-md-block">
+            <div data-aos="flip-left" class="col-md-1 d-none d-md-block">
                 <img src="assets/why/line.png">
             </div>
             <div class="col-md">
-                <h2 class="letra2-why">
+                <h2 data-aos="fade-down" class="letra2-why">
                     NetWart
                 </h2>
                 <div class="row">
-                    <div class="col-md-12 col-lg-10 col-1-media-der">
+                    <div data-aos="fade-up-left" class="col-md-12 col-lg-10 col-1-media-der">
                         <div class="media why-media">
                             <img src="assets/why/creativo.png" class="mr-3">
                             <div class="media-body">
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-10 col-2-media">
+                    <div data-aos="fade-up-left" class="col-md-12 col-lg-10 col-2-media">
                         <div class="media why-media">
                             <img src="assets/why/dinero.png" class="mr-3">
                             <div class="media-body">
@@ -495,7 +495,7 @@
     <footer class="copri">
         <div class="container">
           <div class="medium">
-            <div class="row">
+            <div id="contTEXTfooter" class="row">
                 <div class="col-12 col-sm-4">
                     <!-- <h3>Sede Central</h3>
                     <P class = "m-0">Calle Bolivar 111</P>
@@ -505,15 +505,15 @@
                     <img  class="footer-imag" src="assets/images/logoheader.png" alt="NetWart logo">
                 </div>
                 <div class="col-12 col-sm-4">
-                    <h3>links</h3>
+                    <h3>Links</h3>
                     <ul id="listabaja" class="list-unstyled">
                         <li>
-                            <a href=#"">
+                            <a href="index.html">
                                 Inicio
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="nuestraEmpresa.html">
                                 Nuestra Empresa
                             </a>
                         </li>
@@ -523,7 +523,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="contactanos.html">
                                 Contactanos
                             </a>
                         </li>
@@ -531,7 +531,7 @@
                     
                 </div>
                 
-                <div class="col-12 col-sm-4">       
+                <div id="logRedesSoFoter" class="col-12 col-sm-4">       
                     <!-- <img src="img/map.png" alt="Mapa" class="mw-100"> -->
                     <h3>Visitanos en: </h3>
                     <!-- class="btn btn-social-icon btn-facebook clases de buttons social"  -->
