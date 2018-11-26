@@ -33,6 +33,7 @@ html, body{
   border-radius: 8px;
   height: 2.2rem;
   border:solid 1px white;
+  margin-left: 2rem;
 }
 .btn-face {
   background-color: #3b5998;
@@ -40,7 +41,10 @@ html, body{
   border-radius: 8px;
   height: 2.2rem;
   border:solid 1px white;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
+  z-index: 2;
+  /*padding-left: 2rem;*/
+  /*margin-right: 0rem;*/
 }
 #main .carousel-inner img {
   max-height: 100vh;
@@ -443,6 +447,21 @@ html, body{
   border-radius: 10px;
 }
 
+#carousel4{
+    border: solid 6px #068587 !important;
+    border-radius: 7px;
+    /*height: 20%;*/
+    margin: 2rem;
+}
+/*.empresa{
+  color: #0DFF9F;
+  font-weight: bold;
+  text-shadow: -2px -2px 1px #05613C, 2px 2px 1px #05613C, -2px 2px 1px #05613C, 2px -2px 1px #05613C;
+}*/
+#ExpTec{
+  font-weight: bold;
+  text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
 /* #menu2{
     display: none;
   }*/
@@ -651,6 +670,7 @@ html, body{
     text-align: center !important;
     font-size: 0.9rem;
   }
+  
 }
 
 
