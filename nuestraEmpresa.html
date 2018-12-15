@@ -5,21 +5,27 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	    <!-- Bootstrap CSS -->
+        
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/flexslider.css">
+        <link rel="stylesheet" href="styles/font-awesome.css">
 	    <link rel="stylesheet" href="styles/estilos.css">
-        <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
 	    
+
+        <!-- <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/main.js"></script> -->
 		<title>NetWart</title>
 </head>
 <body id="bodyNuestraEmpresa">
 		
 	<!-- Header -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fondheader fixed-top">
+    <nav id="header2" class="navbar navbar-expand-lg navbar-dark bg-dark fondheader fixed-top">
       <div class="container">
         <a class="navbar-brand text-netwart" href="#">
-          <img id="loghea" src="assets/images/logoheader.png" alt="NetWart logo"><a id="letraNetwart">NetWart</a>
+          <img id="logHea" src="assets/logo/logoheader1.png" alt="NetWart logo"><a id="letraNetwart">NetWart</a>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,7 +39,7 @@
                         <a class="nav-link" href="index.html">
                             <!-- fa para habilitar font awesome home el nombre del icono de la pagina -->
                             <span class="fa fa-home fa-lg"></span>
-                            Inicio
+                            INICIO
                         </a>
                     </li>
                     <!-- <li class="nav-item">
@@ -45,20 +51,20 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="nuestraEmpresa.html">
                             <span class="fas fa-id-card fa-lg""></span>
-                            Nuestra Empresa
+                            NUESTRA EMPRESA
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">
                             <span class="fas fa-laptop fa-lg""></span>
-                            Servicios
+                            SERVICIOS
                         </a>
                     </li>
                     <!-- submenu -->
                     <li class="nav-item ">
                         <a href="contactanos.html" class="nav-link">
                             <span class="fas fa-envelope fa-lg"></span>
-                            Contactanos
+                            CONTACTANOS
                         </a>
                         <!-- contenido del submenu -->
                         <!-- colores predeterminados de clases de boostrap -->
@@ -80,6 +86,23 @@
     <!-- /Header -->
 
     <div id="bodyNuestraEmpresa" class="fondempre">
+       
+        <div  class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <!-- <h3>Misión</h3> -->
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-5">
+                    <img src="assets/img/misionVision/mision.png" id="imgMis">
+                </div>
+                <div class="col-12 col-sm-12 col-md-7 contMisVis">
+                    <p>Comercializar soluciones  TIC y Seguridad Electrónica de vanguardia, con una excelente calidad en el servicio a nuestros clientes, a precios competitivos que generen productividad y eficiencia, impulsar el crecimiento profesional de nuestro personal, contribuir con el desarrollo económico de nuestra región.</p>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <!-- barra de navegacion auxiliar (Breadcrumb) -->
@@ -92,34 +115,70 @@
                     </li> 
                 </ol> -->
                 <div class="col-12 col-sm-12">
-                    <h3>Misión y Visión</h3>
+                    <!-- <h3>Visión</h3> -->
                     <hr>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-4">
-                    <img src="img/chef.jpg" class="w-100">
+                <div class="col-12 col-sm-12 col-md-7 contMisVis">
+                    <p>Ser la empresa más importante en soluciones tecnológicas en el ámbito regional y del país; referente para nuestros clientes en creatividad, innovación y conocimiento; reconocidos por nuestros valores, para crear valor económico a nuestra región.</p>
                 </div>
-                <div class="col-12 col-sm-12 col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="col-12 col-sm-12 col-md-5">
+                    <img src="assets/img/misionVision/vision.png" id="imgVis">
                 </div>
             </div>
         </div>
+
+         <!-- aqui empieza el slider -->
+        <div id="slider">
+            <!-- <h1>Los Mejores..!</h1> -->
+            <div class="flexslider">
+                <ul class="slides">
+
+                    <li>
+                        <img src="assets/img/1.jpg" alt="">
+                        <section class="caption">
+                            <h2>Lorem slider #1</h2>
+                        </section>ss
+                    </li>
+
+                    <li>
+                        <img src="assets/img/2.jpg" alt="">
+                        <section class="caption">
+                            <h2>Lorem slider #2</h2>
+                        </section>
+                    </li>
+
+                    <li>
+                        <img src="assets/img/3.jpg" alt="">
+                        <section class="caption">
+                            <h2>Lorem slider #3</h2>
+                        </section>
+                    </li>
+
+                    <li>
+                        <img src="assets/img/4.jpg" alt="">
+                        <section class="caption">
+                            <h2>Lorem slider #4</h2>
+                        </section>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- aqui termina el slider -->
+
+
+
+
+
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
                     <h3>Nuestros Origenes</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Fundada en 2018, NetWart es una StartUp tecnologíca ubicada en la ciudad de Sucre Bolivia,  que brinda lo mejor en soluciones de ingeniería de software, TIC (Tecnologías de Información y Comunicación),  seguridad electrónica (Sistemas de alarma, CCTV, etc.), Diseño Grafico y Producción de Video. <br> Invirtiendo Intensamente en la educación y especializacion de nuestro personal. Esta vision nos permite destacar frente a la competencia con nuestras soluciones inmediatas, y convertirnos en uno de los proveedores más confiables y valiosos de recursos tecnologicos en la capital. <br> 
+                    Formamos y proporcionamos equipos de ingeniería altamente calificados a empresas que buscan actualizaciones tecnologicas y capacitaciones de una manera más asequible y de mayor calidad.</p>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="card">
@@ -175,7 +234,7 @@
                         </div>
                     </div>
                 </div>
-                <div  class="col-12 col-sm-12">
+                <div id="fraseNE"  class="col-12 col-sm-12">
                     <div class="card card-body bg-light frase">
                         <!-- una frase -->
                         <blockquote class="blockquote">
@@ -240,74 +299,7 @@
                 </div>
             </div>
         </div>
-
-        <div  class="container">
-                <div class="row">
-                    <div class="col-12 col-md-8 offset-md-2">
-                        <h3>Controles, Indicadores y Caption</h3>
-                        <!-- Aqui comienzo el carousel -->
-                        <div class="carousel slide" id="carousel4" data-ride="carousel">
-                            <!-- aqui son los indicadores son una lista ordenada -->
-                            <ol class="carousel-indicators">    
-                                <!-- data slide es el orden de las imagenes el primero empezara en 0 y asi sucesivamente -->
-                                <li data-target="#carousel4" data-slide-to="0"></li>
-                                <li data-target="#carousel4" data-slide-to="1"></li>
-                                <li data-target="#carousel4" data-slide-to="2"></li>
-                                <li data-target="#carousel4" data-slide-to="3"></li>
-                                <li data-target="#carousel4" data-slide-to="4"></li>
-                            </ol>
-                            <!-- fin indicadores -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/NEcarrousel/1.jpg" alt="img1" class="d-block img-fluid">
-                                    <div class="carousel-caption">
-                                        <h3 class="empresa">NetWart</h3>
-                                        <p class="ExpTec">Expertos en Tecnología</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/NEcarrousel/2.jpg" alt="img2" class="d-block img-fluid">
-                                    <div class="carousel-caption">
-                                        <h3 class="empresa">NetWart</h3>
-                                        <p class="ExpTec">Expertos en Tecnología</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/NEcarrousel/3.jpg" alt="img3" class="d-block img-fluid">
-                                    <div class="carousel-caption">
-                                        <h3 class="empresa">NetWart</h3>
-                                        <p class="ExpTec">Expertos en Tecnología</p>
-                                    </div>
-                                </div>
-                                 <div class="carousel-item">
-                                    <img src="assets/NEcarrousel/4.jpg" alt="img3" class="d-block img-fluid">
-                                    <div class="carousel-caption">
-                                        <h3 class="empresa">NetWart</h3>
-                                        <p class="ExpTec">Expertos en Tecnología</p>
-                                    </div>
-                                </div>
-                                 <div class="carousel-item">
-                                    <img src="assets/NEcarrousel/5.jpg" alt="img3" class="d-block img-fluid">
-                                    <div class="carousel-caption">
-                                        <h3 class="empresa">NetWart</h3>
-                                        <p class="ExpTec">Expertos en Tecnología</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- codigo para de controles -->
-                            <a href="#carousel4" class="carousel-control-prev" data-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </a>
-                            <a href="#carousel4" class="carousel-control-next" data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </a>
-                        </div>
-                 </div>
-            </div>
-        </div>
-
-
+        
 
         <div id="menu2" class="row">
                 <!-- barra de navegacion auxiliar (Breadcrumb) -->
@@ -341,7 +333,7 @@
                     <P class = "m-0">Zona Central</P>
                     <P class = "m-0">Sucre Bolivia</P> -->
                     <h2> NetWart </h2>
-                    <img  class="footer-imag" src="assets/images/logoheader.png" alt="NetWart logo">
+                    <img id="logFoot" class="footer-imag" src="assets/logo/logoheader1.png" alt="NetWart logo">
                 </div>
                 <div id="linksFooter" class="col-12 col-sm-4">
                     <h3>links</h3>
@@ -352,7 +344,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#"> 
                                 Nuestra Empresa
                             </a>
                         </li>
@@ -370,16 +362,16 @@
                     
                 </div>
                 
-                <div id="logRedesSoFoter" class="col-12 col-sm-4">       
-                    <!-- <img src="img/map.png" alt="Mapa" class="mw-100"> -->
+                <!-- <div id="logRedesSoFoter" class="col-12 col-sm-4">       
+                   
                     <h3>Visitanos en: </h3>
-                    <!-- class="btn btn-social-icon btn-facebook clases de buttons social"  -->
-                    <a href="" class="btn btn-social-icon btn-facebook">
-                        <!-- target="_blank" para abrir en otra pestaña -->
+                    
+                    <a href="" class="btn btn-social-icon btn-facebook ">
+                        
                         <i class="fab fa-facebook-f" target="_blank"></i>
                     </a>
                     <a href="" class="btn btn-social-icon btn-twitter">
-                        <i class="fab fa-twitter"></i>
+                        <i id="botTWIT" class="fab fa-twitter"></i>
                     </a>
                     <a href="" class="btn btn-social-icon btn-google">
                         <i class="fab fa-google-plus-g"></i>
@@ -387,6 +379,19 @@
                     <a href="" class="btn btn-social-icon btn-instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
+                </div> -->
+
+                <div  class="container col-12 col-sm-4">
+                    <h4>Nuestras Redes Sociales</h4>
+                    <div id="footer2" class="text-center center-block">
+                        <!-- <p class="txt-railway">- Bootsnipp.com -</p> -->
+                        <br />
+                            <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                        </div>
+                    <hr>
                 </div>
                 <div id="copy" class="col-12 col-sm-12 coprii">
                     <h6> © Copyright 2018 - NetWart</h6>
@@ -405,8 +410,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<!-- <script src="js/aos.js"></script> -->
-        <script src="lib/jquery-3.3.1.min.js"></script>
-        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/main.js"></script>
 		<script src="js/index.js"></script>
 	<!-- 	<script src="js/particles.js"></script>
     	<script src="js/particulas.js"></script>
