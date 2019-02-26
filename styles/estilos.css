@@ -1,6 +1,7 @@
-/*-------------------------------------------------------------------*/
-/*CSS DEL INDEX*/
+ /*CSS DEL INDEX */
 
+/*ESTILOS DE LETRA */
+/*______________________________________________*/
 @font-face{
   font-family: "header_titulos";
   src: url('../fonts/header/Gothic/GOTHIC.TTF');
@@ -9,18 +10,24 @@
   font-family: "header_menu";
   src: url('../fonts/header/menu.ttf');
 }
+/*______________________________________________*/
+/*/ESTILOS DE LETRA */
+
+/*ESTILOS GLOBAL*/
+/*______________________________________________*/
 html, body{
   height: 100%;
+  width: 100%;
   margin: 0px;
   background-color: #22252c;
   /*display: flex;*/
 }
-/*_________________________________________________*/
+/*______________________________________________*/
+/* /ESTILOS GLOBAL*/
 
-/*aqui empieza el css del main carrousel*/
-/*text-platzi {
-  color: #97c93e !important;
-}*/
+/*CSS MAIN*/
+/*______________________________________________*/
+
 #header2{
   padding: 2px;
   font-family: "header_menu";
@@ -105,16 +112,13 @@ html, body{
 #pad{
   display: flex;
 }
-/*aqui termina el css del main carrousel*/
 
 /*_______________________________________________*/
+/*/CSS MAIN*/
 
-/*aqui empieza el css del header que esta dentro de main*/
-/*#header_home{
-  background-color: black !important;
-  position: absolute !important;
-  z-index: 2 !important;
-}*/
+/*CSS HEADER QUE ESTA DENTRO DEL MAIN*/
+/*________________________________________________*/
+
 #header_home{
   background-image: url('../img/header/fondo.jpg');
   background-size: cover;
@@ -150,29 +154,27 @@ html, body{
 }
 #navbarSupportedContent li{
   margin-left: 0.5rem;
-
 }
 
-/*@media(min-width: 768px){
-  #mimenu{
-    margin-left: 80rem;
-  }
-}
-@media(min-width: 1080px){
-  #mimenu{
-    margin-left: 40rem;
-  }
-}*/
+/*_________________________________________________*/
+/*  /CSS HEADER QUE ESTA DENTRO DEL MAIN*/
 
-/*Aqui termina CSS del header que esta dentro de main*/
 
-/*____________________________________________________*/
-
-/*aqui empieza los estilos del contenido de porque netwart*/
+/* CSS DEL PORQUE*/
+/*___________________________________________________*/
 
 .why{
   background-color: #22252c;
   font-family: "header_titulos";
+}
+.subtWhy{
+	font-family: "header_titulos";
+	color: #02cfb4;
+}
+.frase1Why{
+	color: #B8B8B8;
+	font-size: 1.1rem;
+	text-align: justify;
 }
 #sig{
   font-family: "arial";
@@ -186,16 +188,18 @@ html, body{
   color: #02cfb4;
   text-align: left;
   padding-top: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .why-media{
   color: white;
 }
 .media-body{
   padding-top: 0.8rem;
+
 }
 .why-p{
   text-align: justify;
+  font-size: 1.1rem;
 }
 .col-2-media{
   padding-top: 3rem;
@@ -210,39 +214,34 @@ html, body{
   width: 8rem;
 }
 
-/*#particles-js{
-  width: 97%;
-  height: 80%;
-  position: relative;
-  z-index: 0;
-}
-#contenidoWhy{
-  position: absolute;
-  z-index: 1;
-}*/
+/*____________________________________________________*/
+/* /CSS DEL PORQUE*/
 
-/*________________________*/
 
-/*aqui empieza el css de los servicios*/
 
-/*.servicio-cont{
-  padding: 3rem 0rem;
-  border-bottom: 1px solid #e0e0e0;
-  color: white;
-}*/
-/*.servicio{
-  max-width: 12rem;
-}*/
-/*.media{
-  align-items:center;
-}*/
+/*CSS DE SERVICIOS*/
+
 #servicios{
   background-color: #0F2A3B;
   color: white;
   margin-bottom: 0;
 }
+.titservices{
+  text-align: center;
+  font-family: "header_menu";
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+}
 .img-serv{
   width: 28rem;
+}
+#imgComputadoras{
+  width: 22rem;
+  /*margin: 0;
+  padding: 0;*/
+}
+#imgImpresoras{
+  width: 22rem;
 }
 .btn{
   margin-top: 1.5rem;
@@ -263,7 +262,6 @@ html, body{
 #intSistOWin{
   width: 30%;
   margin-left: calc(30% - 5px);
-  z-index: 4;
 }
 #intSistOLin{
   width: 30%;
@@ -376,10 +374,9 @@ html, body{
   letter-spacing: 2px;
 }*/
 
-/*aqui termina el css de los servicios*/
-/*____________________________________*/
-
-/*aqui empieza el css del footer*/
+/* /CSS DE SERVICIOS*/
+/*_____________________________________________________*/
+/*CSS DE FOOTER*/
 #logFoot{
   height: 7.5rem;
   padding-bottom: 12px;
@@ -439,17 +436,13 @@ html, body{
   width: 3rem;
   height: 3rem;
 }
-/*#contTEXTfooter{
-  text-align: center;
-}*/
-/*aqui termina el css del footer*/
-/*____________________________________*/
 
-/*-------------------------------------------------------------------*/
-/*CSS DEL INDEX*/
+/* /CSS DE FOOTER*/
 
-/*_____________________________________________________________________________*/
-/*AQUI EMPIEZA EN CSS DE NUESTRA EMPRESA.HTML*/
+/*___________________________________________________*/
+/* /CSS DEL INDEX 
+
+*AQUI EMPIEZA EN CSS DE NUESTRA EMPRESA.HTML*/
 
 #bodyNuestraEmpresa{
   background-color: white;
@@ -611,8 +604,7 @@ html, body{
 
 }
 
-.info_title,
-.info_items{
+.info_title, .info_items{
     position: relative;
     z-index: 2;
     color: #fff;
@@ -698,7 +690,7 @@ form.form_contact textarea{
     max-height: 90px;
 }
 
-form.form_contact input[type="button"]{
+form.form_contact input[type="submit"]{
     width: 180px;
   background: #4091EC;
   padding: 10px;
@@ -714,7 +706,7 @@ form.form_contact input[type="button"]{
   cursor: pointer;
 }
 
-form.form_contact input[type="button"]:hover{
+form.form_contact input[type="submit"]:hover{
     background: #3371B6;
 }
 
@@ -808,142 +800,695 @@ form.form_contact input[type="button"]:hover{
 #main2{
   padding-bottom: 2rem;
 }
-/*________________________________________________________________________*/
-
-/*AQUI EMPIEZAN LOS MEDIA QUERY*/
 
 
-@media (max-width: 767px){
-  .card-info{
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-  }
-  .navbar-brand{
-    width: 70%;
-  }
-  
-  .info_t1, .info_t2{
-    font-size: 1.5rem;
-  }
-  .oculto{
-    display: inline;
-    color: #02cfb4;
-  }
-  .letra2-why{
-    display: none;
-  }
-  .col-1-media-der{
-    padding-top: 3rem;
-  }
-  /* #menu2{
+/*CSS MENSAJE DE ENVIO*/
+
+#formularioGracias{
+  background-color: #47C7D6;
+  border: solid 3px #007369;
+  color: white;
+  text-align: center;
+}
+.mensaje-exito{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mensaje-exito h1{
+  display: block;
+  text-align: center;
+}
+.mensaje-exito a{
+  display: block;
+  padding: 10px 30px;
+  background-color: #4091EC;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 20px;
+}
+#logGracias{
+  width: 18%;
+}
+
+
+/*_____________________________________________________________________________*/
+/*AQUI EMPIEZA EN CSS DE NUESTRA EMPRESA.HTML*/
+
+#bodyNuestraEmpresa{
+  background-color: white;
+  /*margin-top: 7.2rem;*/
+  padding-top: 4rem;
+}
+#blanco{
+  background-color: white;
+}
+/*#menu2{
+  width: 90%;
+  margin-left: 5%;
+}*/
+
+.img-fluid{
+  max-width: initial;
+  width: 100%;
+}
+#empresa{
+  color: lightblue;
+}
+
+
+
+#main2{
+  background-color: white;
+  padding-top: 4rem;
+}
+.btn-success2{
+  background-color: #3b5998;
+  color: white;
+}
+.mapita{
+  margin-left: calc(-35% - 5px);
+  width:140% !important;
+  height: 25rem;
+  border:solid 4px #068587;
+}
+/*.esp iframe{
+  height: 25rem !important;
+  width: 30rem !important;
+  margin-right: 5rem;
+  border-radius: 25px;
+}*/
+.formularioContac input{
+  border:solid 2px #068587;
+  border-radius: 10px;
+}
+.formularioContac label{
+  color:#068587;
+  font-weight: bold;
+}
+
+
+#comentario{
+  border:solid 2px #068587;
+  border-radius: 25px;
+}
+#selector{
+  border:solid 2px #068587;
+  border-radius: 10px;
+}
+
+#carousel4{
+    border: solid 6px #068587 !important;
+    border-radius: 7px;
+    /*height: 20%;*/
+    margin: 2rem;
+}
+/*.empresa{
+  color: #0DFF9F;
+  font-weight: bold;
+  text-shadow: -2px -2px 1px #05613C, 2px 2px 1px #05613C, -2px 2px 1px #05613C, 2px -2px 1px #05613C;
+}*/
+#ExpTec{
+  font-weight: bold;
+  text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+#imgMis{
+  width: 80%;
+}
+#imgVis{
+  width: 95%;
+}
+/*#containerMisVis{
+  height: 12.5rem;
+}*/
+.contMisVis{
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+#slider{
+  padding-bottom: 2rem !important;
+}
+#fraseNE{
+  padding-top: 2rem;
+}
+.titForm{
+  color: #1BAB9C;
+}
+.FeedbackGracias{
+  color: #1BAB9C;
+  text-align:center;
+}
+/*.contForm{
+  padding-left: 2rem;
+}
+.contForm i{
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+.formularioContac{
+  border-top: 4px solid #257069;
+  border-bottom: 4px solid #257069;*/
+  /*padding-top: 2.5rem;*/
+  /*margin-top: 1rem;
+  margin-bottom: 1rem;*/
+ /* padding-bottom: 2rem;*/
+/*}*/
+
+
+/* #menu2{
     display: none;
   }*/
+/*FORMULARIO*/
 
+/*.form_wrap{
+    width: 1050px;
+    height: 530px;
+    margin: 50px auto;
+    display: flex;
+
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}*/
+
+/* Informacion de Contacto*/
+
+/*.cantact_info::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #4091EC;
+    opacity: 0.9;
+}
+
+.cantact_info{
+    width: 38%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../fondo.jpg');
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.info_title,
+.info_items{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.info_title{
+    margin-bottom: 60px;
+}
+
+.info_title span{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info_title h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.info_items p{
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info_items p:nth-child(1) span{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.info_items p:nth-child(2) span{
+    font-size: 50px;
+    margin-right: 15px;
+    margin-left: 4px;
+}*/
+
+
+/* Formulario de contacto*/
+form.form_contact{
+    width: 62%;
+    padding: 30px 30px;
+    padding-bottom: 40rem !important;
+}
+
+form.form_contact h2{
+  font-size: 25px;
+  font-weight: 600;
+  color: #303030;
+  margin-bottom: 30px;
+}
+
+form.form_contact .user_info{
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contact label{
+    font-weight: 600;
+}
+
+form.form_contact inp ut,
+form.form_contact textarea{
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
+    font-family: 'Open sans';
+  color: #5A5A5A;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+form.form_contact textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contact input[type="submit"]{
+    width: 180px;
+  background: #4091EC;
+  padding: 10px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 25px;
+
+    align-self: flex-end;
+
+    color: #fff;
+  font-family: 'Open sans';
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form.form_contact input[type="submit"]:hover{
+    background: #3371B6;
+}
+
+/* Ventana de errores*/
+.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+    font-family: 'Ubuntu';
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+    content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #C5C5C5;
+  margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal p:before{
+    content: "\f00d";
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #E25151;
+    margin-right: 8px;
+}
+/*.btn-face2{
+  background-color:#3b5998;
+  border-radius: 5px;
+  height: 2.4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: white;
+}
+.btn-what2{
+  background-color: #25d366;
+  color: white;
+}
+*/
+#btnClose{
+    display: inline-block;
+  padding: 3px 10px;
+  margin-top: 10px;
+
+  background: #E25151;
+  color: #fff;
+  border: 2px solid #B14141;
+  cursor: pointer;
+
+  float: right;
+}
+
+/*FORMULARIO*/
+ #formularioC{
+    width: 100%;
+    margin-right: 0!important;
+    padding: 0!important;
+  }
+#jumboLogoContac{
+  width: 85%;
+  margin-top: calc(15% - 5px);
+}
+#main2{
+  padding-bottom: 2rem;
+}
+
+
+
+/* MediaQuerys*/
+/*____________________________________________________*/
+
+
+
+/*@media(max-height: 768px){
+  #particles-js{
+   height: 100%;
+  }
+}*/
+
+@media (max-width: 767px){
+  	  .card-info{
+	    margin-left: 2rem;
+	    margin-bottom: 2rem;
+	  }
+	  .navbar-brand{
+	    width: 70%;
+	  }
+
+	  /*CSS SERVICIOS*/
+	  #imgComputadoras{
+	    width: 230px;
+	  }
+	  #imgImpresoras{
+	    width: 230px !important;
+	  }
+	  .img-serv{
+	    width: 200px;
+	  }
+	  #imgSofInt1{
+	    width: 60px;
+	  }
+	  #imgSofInt2{
+	    width: 60px;
+	  }
+	  #imDisGraf{
+	    width: 100px;
+	    margin-left: calc(-25% - 5px);
+	    position: absolute;
+	  }
+	  #imDisenoGraf{
+	    width: 170px;
+	    position: absolute;
+	    margin-left: calc(-50% - 5px);
+	  }
+	  /* /CSS SERVICIOS*/
+	  
+	  .info_t1, .info_t2{
+	    font-size: 1.5rem;
+	  }
+	  .oculto{
+	    display: inline;
+	    color: #02cfb4;
+	  }
+	  .letra2-why{
+	    display: none;
+	  }
+	  .col-1-media-der{
+	    padding-top: 3rem;
+	  }
+	  .textservicios{
+	  	font-size: 0.9rem;
+	  }
+	  #letraNetwart{
+	  	display: none;
+	  }
+	  .subServ{
+		  font-size: 2rem;
+		}
+    #menu2{
+      margin-left: 4rem;
+      width: 80%;
+    }
+    #jumboLogoContac{
+      width: 35%;
+      /*margin-left: 0;
+      padding: 0;*/
+      margin-left: calc(65% - 5px);
+      margin-top: -350px;
+      position: absolute;
+    }
+    #map{
+      margin-left: 10rem;
+      /*width: 130%;*/
+    }
+    #main2{
+    padding-top: 2rem;
+    }
+	  #formularioGracias{
+      width: 85% !important;
+    }
+    .FeedbackGracias{
+      font-size: 1.5rem;
+    }
+    /*#formularioGracias{
+      background-color: #47C7D6;
+      border: solid 3px #007369;
+      color: white;
+      text-align: center;
+    }
+    .mensaje-exito{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }*/
+    .mensaje-exito h1{
+      font-size: 1.7rem;
+    }
+    .mensaje-exito a{
+      display: block;
+      padding: 10px 30px;
+      background-color: #4091EC;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 20px;
+    }
+    #logGracias{
+      width: 40%;
+    }
 }
 
 @media (min-width: 768px){
-  #mimenu{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 8rem;
-  }
-  .navbar-brand{
-    margin-left: 4rem;
-  }
-  .nav-link{
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .info_t1, .info_t2{
-    font-size: 1.4rem;
-  }
-  .mapita{
-    margin-left: calc(2% - 5px);
-    width:110% !important;
-    height:24rem;
-    margin-top: 3rem;
-  }
-   #menu2{
-    display: none;
-  }
-
- /* #particles-js{
-  height: 80%;
- }*/
+	  #mimenu{
+	    display: flex;
+	    justify-content: flex-end;
+	    margin-right: 8rem;
+	  }
+	  .navbar-brand{
+	    margin-left: 4rem;
+	  }
+	  .nav-link{
+	    padding-top: 0;
+	    padding-bottom: 0;
+	  }
+	  .info_t1, .info_t2{
+	    font-size: 1.4rem;
+	  }
+	  .mapita{
+	    margin-left: calc(2% - 5px);
+	    width:110% !important;
+	    height:24rem;
+	    margin-top: 3rem;
+	  }
+	   #menu2{
+	    display: none;
+	  }
+	    #particles-js{
+	       position: relative;
+	       /*height: 100% !important;*/
+	   }
+	  
 }
 
 @media (min-width: 992px){
-  .nav-item{
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-  .info_t1, .info_t2{
-    font-size: 2rem;
-  }
-  .header_home{
-    height: 100%;
-  } 
-  #menu2{
-    display: none;
-  }
+	  .nav-item{
+	    padding-right: 1rem;
+	    padding-left: 1rem;
+	  }
+	  .info_t1, .info_t2{
+	    font-size: 2rem;
+	  }
+	  .header_home{
+	    height: 100%;
+	  } 
+	  #menu2{
+	    display: none;
+	  }
 
 }
 
 @media (min-width: 1024px){
-  .header_home{
-    height: 50%;
-  }
-  .textservicios{
-  /*font-family: "header_menu";*/
-  font-size: 1.3rem;
-  /*letter-spacing: 2px;*/
-  }
-  #particles-js{
-    width: 97%;
-    height: 90%;
-    position: relative;
-    z-index: 0;
-  }
-  #contenidoWhy{
-    position: absolute;
-    z-index: 1;
-  }
-  #map{
-    margin-left: 2rem;
-    /*height: 40rem !important;*/
-  }
-  /*.mapita{
-    width: 150%;
-    height: 40rem;
-  }*/
+  		.header_home{
+		  height: 50%;
+		 }
+		  .textservicios{
+		  /*font-family: "header_menu";*/
+		  font-size: 1.3rem;
+		  /*letter-spacing: 2px;*/
+		  }
+		  #particles-js{
+		    width: 97%;
+		    height: 100%;
+		    position: relative;
+		    z-index: 0;
+		  }
+		  #contenidoWhy{
+		    position: absolute;
+		    z-index: 1;
+		  }
+		  #map{
+		    margin-left: 2rem;
+		  }
+      .FeedbackGracias{
+        font-size: 2.5rem;
+      }
+		  
 }
+
 
 @media (min-width: 1025px){
   .header_home{
     height: 100%;
   } 
-  #particles-js{
-  width: 97%;
-  height: 100%;
-  position: relative;
-  z-index: 0;
-  }
-  #contenidoWhy{
-    position: absolute;
-    z-index: 1;
-  }
+  /*#particles-js{
+		    
+		    height: 70%;
+		    
+	}*/
    
 }
+@media (min-width: 1370px){
+	#navbarSupportedContent{
+  		font-size: 1.1rem;
+	}
+	#letraNetwart{
+	  font-size: 2.3rem;
+	  letter-spacing: 3px;
+	}
+	.d-none{
+		font-size: 1.3rem;
+	}
+	#scroll{
+		width: 50px;
+		margin-left: calc(48.5% - 15px);
+  		margin-top: -160px;
+	}
+
+	#particles-js{
+		height: 75%;
+	}
+	.subtWhy{
+		font-size: 1.7rem;
+	}
+	.frase1Why{
+	font-size: 1.2rem;
+
+	}
+	.why-p{
+	  font-size: 1.2rem;
+	}
+
+	
+} 
+
+
+/*@media(max-height: 768px){
+  #particles-js{
+   height: 100%;
+  }
+}*/
+
 @media (max-width: 575px){
   .media{
     flex-direction: column;
   }
+  #botFaceboook{
+    width: 7rem;
+    font-size: 14px;
+  }
+  #botWhat{
+    width: 7rem;
+    font-size: 14px;
+  }
+  #scroll{
+    width: 20px;
+    margin-left: calc(50% - 15px);
+    margin-top: -45px;
+  }
+  .titservices{
+    text-align: center;
+    font-size: 1.5rem;
+  }
   .inicio-xs{
     order:-1;
   }
-  #logHea{
-  height: 4rem;
-  }
+ /* #logHea{
+    height: 1rem !important;
+  }*/
   #header2{
   padding: 0.5rem;
   padding-left: 3.5rem;
@@ -953,10 +1498,7 @@ form.form_contact input[type="button"]:hover{
   font-size: 0.8rem;*/
   }
   #contenidoWhy{
-  /*position: absolute;*/
-  /*z-index: 1;*/
-  /*height: 100%;*/
-  font-size: 0.5rem;
+    font-size: 0.9rem;
   }
   #contServicios{
   background-color: blue;
@@ -964,10 +1506,29 @@ form.form_contact input[type="button"]:hover{
   font-size: 0.5rem;
   }
 
+  #imgComputadoras{
+    width: 19rem;
+    margin-left: calc(5% - 5px);
+  }
+  #contenidoLetraCompu{
+    margin-left: 1rem;
+  }
+  #imgImpresoras{
+    width: 18rem !important;
+    margin-left: calc(5% - 5px);
+  }
   .img-serv{
-  width: 17rem;
+  width: 18rem;
   /*margin-left: 10%;*/
-  margin-left: calc(15% - 5px);
+  margin-left: calc(5% - 5px);
+  }
+  #imgSofInt1{
+    width: 120px;
+    margin-right: 40px;
+  }
+  #imgSofInt2{
+    width: 120px;
+    margin-right: 40%;
   }
   #scroll{
  
@@ -993,11 +1554,17 @@ form.form_contact input[type="button"]:hover{
     margin-left: calc(30% - 10px);
       
   }
-    /*#header_home{
-      position: fixed;
-      background-color: red;
-      height: 8%
-    }*/
+
+  #imDisGraf{
+    width: 160px;
+    margin-left: calc(35% - 5px);
+    position: relative;
+  }
+  #imDisenoGraf{
+    width: 220px;
+    position: relative;
+    margin-left: calc(15% - 5px);
+  }
   .mapita{
     margin-left: calc(7% - 5px);
     width:90% !important;
@@ -1032,8 +1599,6 @@ form.form_contact input[type="button"]:hover{
     margin: 1.2rem !important;
     padding: 0.3rem;
     padding-bottom: 2rem;
-
-    /*padding: 0!important;*/
   }
  .user_info{
     width: 150%;
@@ -1044,14 +1609,6 @@ form.form_contact input[type="button"]:hover{
   #jumboLogoContac{
     display: none;
   }
-  /*.btn-face2{
-  width: 6rem;
-  margin: 1px;
-  }
-  .btn-what2{
-    width: 6rem;
-    margin: 1px;
-  }*/
   #botonescontac{
     margin-right: calc(-10% - 10px) !important;
     padding:0;
@@ -1063,13 +1620,29 @@ form.form_contact input[type="button"]:hover{
     width: 80% !important;
   }
   #btnSend{
-    /*padding: 1rem;*/
     margin-bottom: 1rem;
   }
+  #main2{
+    padding-top: 2rem;
+  }
+  #map{
+      margin-left: 0.7rem;
+      /*width: 130%;*/
+  }
+  form.form_contact input[type="submit"]{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 12px;
+    /*padding-left: 20px !important;*/
+  }
+  #logGracias{
+      width: 75%;
+    }
 
-  
 }
 
 
 
-
+/*_____________________________________________________*/
+/* /MediaQuerys
